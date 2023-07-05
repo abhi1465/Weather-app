@@ -27,6 +27,9 @@ async function checkWeather(city){
         if(word=="rain"){
             word="drizzle";
         }
+        else if(word=='fog'){
+            word='peculiar';
+        }
         var soundName=word;
         var audio = new Audio("./sounds/"+soundName+".mp3");
         audio.play();
