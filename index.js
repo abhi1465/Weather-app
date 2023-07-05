@@ -24,6 +24,9 @@ async function checkWeather(city){
         
         document.querySelector(".weather").style.display="block";
         document.querySelector(".error").style.display="none";
+        if(word=="rain"){
+            word="drizzle";
+        }
         var soundName=word;
         var audio = new Audio("./sounds/"+soundName+".mp3");
         audio.play();
